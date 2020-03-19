@@ -28,6 +28,7 @@ collections:
   - name: blog
     label: Blog
     folder: source/posts/
+    preview_path: "blog/{{slug}}"
     extension: .html.md
     format: frontmatter
     create: true
@@ -41,10 +42,12 @@ collections:
 
   - name: pages
     label: Pages
+    preview_path: "{{slug}}"
     files:
       - file: "data/pages/home.yml"
         label: Homepage
         name: home
+        slug: '{{title}}'
         fields:
           - label: Hero
             name: hero
