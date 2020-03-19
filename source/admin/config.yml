@@ -46,14 +46,14 @@ collections:
 
   - name: pages
     label: Pages
-    preview_path: "{{slug}}"
-    show_preview_links: true
     create: true
     files:
       - file: "data/pages/home.yml"
         label: Homepage
         name: home
         slug: '{{title}}'
+        preview_path: "{{slug}}"
+        show_preview_links: true
         fields:
           - label: Hero
             name: hero
@@ -64,13 +64,6 @@ collections:
           - label: Story
             name: story
             widget: markdown
-    format: frontmatter
-    fields:
-      - {label: Title, name: title, widget: string, required: true}
-      - {label: Publish Date, name: date, widget: datetime}
-      - {label: Description, name: description, widget: string}
-      - {label: Image, name: image, widget: image}
-      - {label: Body, name: body, widget: markdown}
 
   - name: settings
     label: Settings
