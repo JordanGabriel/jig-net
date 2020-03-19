@@ -47,22 +47,15 @@ collections:
   - name: pages
     label: Pages
     preview_path: "{{slug}}"
+    show_preview_links: true
     create: true
-    files:
-      - file: "data/pages/home.yml"
-        label: Homepage
-        name: home
-        slug: '{{title}}'
-        fields:
-          - label: Hero
-            name: hero
-            widget: object
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Image, name: image, widget: image}
-          - label: Story
-            name: story
-            widget: markdown
+    slug: '{{title}}'
+    fields:
+      - {label: Title, name: title, widget: string, required: true}
+      - {label: Publish Date, name: date, widget: datetime}
+      - {label: Description, name: description, widget: string}
+      - {label: Image, name: image, widget: image}
+      - {label: Body, name: body, widget: markdown}
 
   - name: settings
     label: Settings
