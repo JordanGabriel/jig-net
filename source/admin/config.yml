@@ -1,6 +1,9 @@
 backend:
   name: git-gateway
 
+site_url: https://angry-meitner-647a8e.netlify.com
+display_url: https://angry-meitner-647a8e.netlify.com
+
 media_folder: source/images/uploads
 public_folder: /images/uploads
 
