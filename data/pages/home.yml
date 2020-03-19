@@ -1,3 +1,9 @@
+---
+hero:
+  title: home
+  image: /images/uploads/logo-horz-red-black.svg
+story: test
+---
 hero:
   title: home world
   image: /images/uploads/logo-horz-red-black.svg
